@@ -41,3 +41,15 @@ O sistema é composto por três componentes principais:
    git clone https://github.com/seu-usuario/chat-grpc.git
    cd chat-grpc
    pip install -r requirements.txt
+
+2. Executar:
+
+   Para iniciar o servidor
+   ```bash
+   python servidor.py
+   ```
+
+   Para cadada cliente que deseja entrar no servidor
+   ```bash
+   python client.py
+   ```
