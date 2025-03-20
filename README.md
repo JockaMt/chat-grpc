@@ -40,3 +40,4 @@ O sistema é composto por três componentes principais:
    ```bash
    git clone https://github.com/seu-usuario/chat-grpc.git
    cd chat-grpc
+   pip install -r requirements.txt
