@@ -1,55 +1,70 @@
-# 📩 **CHATGRPC** 📤
+# 📩 CHATGRPC
 
-##  **Membros do Grupo** 
+Sistema de chat simples usando gRPC, uma estrutura de chamada de procedimento remoto (RPC) moderna e eficiente.
 
-| 👤 Nome                 | 🎫 Matrícula  |
-|------------------------|--------------|
-| Jairon Jose Tavares dos Santos   | 22112583    |
-| Arnaldo Lucas Santos Duarte  | 22112370     |
-| Jockson Mateus da Silva Duarte    | 22112374     |
+---
 
-Este é um exemplo de um sistema de chat simples usando gRPC, uma estrutura de chamada de procedimento remoto (RPC) moderna e eficiente. O projeto consiste em um servidor que gerencia as mensagens e clientes que podem enviar e receber mensagens em tempo real.
+## 🧠 Funcionalidades
 
-## Como funciona
+* ✔️ Servidor: Gerencia as mensagens e as envia para todos os clientes conectados.
+* ✔️ Cliente: Permite que o usuário envie e receba mensagens em tempo real.
+* ✔️ gRPC: Comunicação facilitada entre cliente e servidor de forma eficiente.
 
-O sistema é composto por três componentes principais:
+---
 
-1. **Servidor**: Gerencia as mensagens e as envia para todos os clientes conectados.
-2. **Cliente**: Permite que o usuário envie e receba mensagens em tempo real.
-3. **gRPC**: Facilita a comunicação entre cliente e servidor de forma eficiente.
+## 🛠️ Tecnologias
 
-### Arquitetura
+* Python 3.7+
+* gRPC
+* Protocol Buffers
 
-- **`chat.proto`**: Define a interface do serviço de chat usando Protocol Buffers.
-- **`chat_pb2.py` e `chat_pb2_grpc.py`**: Gerados automaticamente a partir do `chat.proto`, contêm as classes Python para as mensagens e serviços.
-- **`servidor.py`**: Implementa o servidor gRPC que gerencia as mensagens.
-- **`client.py`**: Implementa o cliente que permite ao usuário enviar e receber mensagens.
-- **`requirements.txt`**: Lista as dependências do projeto.
+---
 
-## Como executar
+## ⚙️ Como usar
 
-### Pré-requisitos
+```bash id="cmd1"
+# Clonar repositório
+git clone https://github.com/seu-usuario/chat-grpc.git
+cd chat-grpc
 
-- Python 3.7 ou superior
-- `pip` para instalar as dependências
+# Instalar dependências
+pip install -r requirements.txt
 
-### Instalação
+# Iniciar o servidor
+python servidor.py
 
-1. Clone o repositório:
+# Em outro terminal, iniciar o cliente (para cada pessoa que deseja entrar)
+python client.py
+```
 
-   ```bash
-   git clone https://github.com/seu-usuario/chat-grpc.git
-   cd chat-grpc
-   pip install -r requirements.txt
+---
 
-2. Executar:
+## 📸 Demonstração
 
-   Para iniciar o servidor
-   ```bash
-   python servidor.py
-   ```
+(prints do chat funcionando no terminal)
 
-   Para cadada cliente que deseja entrar no servidor
-   ```bash
-   python client.py
-   ```
+---
+
+## 🎯 Objetivo
+
+Projeto desenvolvido para demonstrar o uso de gRPC na criação de um sistema de chat cliente-servidor moderno e eficiente em tempo real.
+
+### Arquitetura do Projeto
+* **`chat.proto`**: Define a interface do serviço de chat usando Protocol Buffers.
+* **`chat_pb2.py` e `chat_pb2_grpc.py`**: Gerados automaticamente a partir do `chat.proto`, contêm as classes Python para as mensagens e serviços.
+* **`servidor.py`**: Implementa o servidor gRPC que gerencia as mensagens.
+* **`client.py`**: Implementa o cliente que permite ao usuário enviar e receber mensagens.
+* **`requirements.txt`**: Lista as dependências do projeto.
+
+### Membros do Grupo
+| 👤 Nome | 🎫 Matrícula |
+|---|---|
+| Jairon Jose Tavares dos Santos | 22112583 |
+| Arnaldo Lucas Santos Duarte | 22112370 |
+| Jockson Mateus da Silva Duarte | 22112374 |
+
+---
+
+## 📄 Licença
+
+MIT
